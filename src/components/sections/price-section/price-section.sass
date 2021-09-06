@@ -1,0 +1,138 @@
+.price-section
+    +section-padding()
+    background-color: $panel
+    overflow: hidden
+
+    &__container
+        +wrapper()
+
+    &__title
+        text-align: center
+        margin-top: 0
+        margin-bottom: 24px
+        font-size: 22px
+        line-height: 120%
+
+        +sm-block()
+            margin-bottom: 32px
+            font-size: 28px
+            
+
+        +md-block()
+            font-size: 40px
+            margin-bottom: 48px
+
+    &__tab-buttons
+        list-style: none
+        padding: 0
+        margin: 0
+        display: grid
+        gap: 16px
+        padding-left: 8px
+        padding-right: 8px
+        margin-bottom: 24px
+        grid-template-columns: 1fr 1fr
+
+        +sm-block()
+            margin-bottom: 32px
+
+        +md-block()
+            margin-bottom: 48px
+            display: flex
+            gap: 0
+            justify-content: center
+
+
+    &__tab-button-item
+        width: 100%
+
+        +sm-block()
+            width: auto
+
+        +md-block()
+            margin-left: 8px
+            margin-right: 8px
+            max-width: 282px
+
+    &__tab-items 
+        +sm-block()
+            display: grid
+            grid-template-columns: 1fr 1fr
+            flex-wrap: wrap
+            gap: 32px 16px
+
+        +md-block()
+            grid-template-columns: 1fr 1fr 1fr 1fr
+
+
+    &__tab-container
+        .swiper-button-next
+            bottom: 70% !important
+            right: -10px !important
+
+        .swiper-button-prev
+            bottom: 70% !important
+            left: -10px !important
+
+        .swiper
+            overflow: visible
+
+    &__button
+        color: $black
+        padding-left: 12px
+        padding-right: 12px
+        padding-top: 5px
+        padding-bottom: 5px
+        border: 1px solid $black
+        border-radius: 12px
+        font-size: 13px
+        line-height: 123%
+        font-family: $bold
+        cursor: pointer
+        transition: background .3s, color .3s, border .3s
+        background-color: transparent
+        width: 100%
+
+        +sm-block()
+            border-radius: 64px
+            font-size: 15px
+            padding-left: 24px
+            padding-right: 24px
+            padding-top: 12px
+            padding-bottom: 12px
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+        
+
+        &--classes
+            display: block
+
+            +sm-block()
+                margin-left: 4px
+
+        &--timing
+            display: block
+            font-size: 11px
+            line-height: 110%
+            font-family: $regular
+            margin-top: 2px
+            
+            +sm-block()
+                font-size: 13px
+                flex-grow: 1
+                flex-shrink: 0
+                width: 100%
+                
+
+        &:hover
+            background-color: $blue-berry-light
+            border: 1px solid $blue-berry-light
+            color: $white
+
+        &--active
+            background-color: $black
+            color: $white
+
+    &--hidden
+        display: none

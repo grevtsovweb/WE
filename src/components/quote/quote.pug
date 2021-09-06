@@ -1,0 +1,6 @@
+mixin quote(img, imgAlt, text)
+    .quote
+        .quote__img
+            .quote__img-inner
+                img(src= img + ".webp", alt= imgAlt, width="112", height="112") 
+        .quote__text!= text

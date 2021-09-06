@@ -1,0 +1,56 @@
+.lecturer-section
+    +section-padding()
+    background-color: $panel
+    overflow: hidden
+
+    &__container
+        +wrapper()
+
+        .swiper-button-next
+            bottom: 70% !important
+            right: -10px !important
+
+        .swiper-button-prev
+            bottom: 70% !important
+            left: -10px !important
+
+        .swiper
+            overflow: visible
+
+    &__header
+        margin-bottom: 32px
+
+        +sm-block()
+            margin-bottom: 40px
+            max-width: 610px
+        
+        +md-block()
+            margin-bottom: 72px
+            max-width: 770px
+
+    &__title
+        margin-bottom: 24px
+        font-size: 22px
+        line-height: 120%
+        margin-top: 0
+
+        +sm-block()
+            margin-bottom: 32px
+            font-size: 28px
+
+        +md-block()
+            font-size: 40px
+
+    &__subtitle
+        margin-top: 0
+        margin-bottom: 0
+
+    
+    &__main
+        +sm-block()
+            display: grid
+            grid-template-columns: 1fr 1fr
+            gap: 40px 16px
+        +md-block()
+            gap: 56px 16px
+            grid-template-columns: 1fr 1fr 1fr 1fr

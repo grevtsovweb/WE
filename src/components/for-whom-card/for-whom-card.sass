@@ -1,0 +1,100 @@
+.for-whom-card
+    background-color: $white
+    border-radius: 16px
+    box-shadow: 0px 6px 12px -6px rgba(28, 28, 28, 0.12), 0px 8px 24px -4px rgba(28, 28, 28, 0.08)
+
+    +sm-block()
+        display: flex
+        align-items: center
+
+    &__image
+        display: flex
+        justify-content: center
+        align-items: center
+        border-top-left-radius: 16px
+        border-top-right-radius: 16px
+
+        +sm-block()
+            max-width: 270px
+            width: 100%
+            flex-shrink: 0
+            border-bottom-left-radius: 16px
+            border-top-right-radius: 0
+            min-height: 240px
+            align-self: stretch
+
+        +md-block()
+            max-width: 384px
+            min-height: 250px
+
+        img
+            +sm-block()
+                width: 100%
+                height: auto
+
+            +md-block()
+                width: 320px
+                height: auto
+
+
+    &__content
+        padding-top: 24px
+        padding-bottom: 24px
+        padding-left: 16px
+        padding-right: 16px
+
+        +sm-block()
+            padding: 24px
+
+        +md-block()
+            padding-left: 116px
+            padding-right: 100px
+            padding-top: 36px
+            padding-bottom: 36px
+
+    &__title
+        font-size: 18px
+        line-height: 120%
+        margin-bottom: 16px
+        margin-top: 0
+        font-family: $header
+
+        +sm-block()
+            font-size: 22px
+
+        +md-block()
+            font-size: 28px
+
+    &__text
+        font-size: 15px
+        line-height: 133%
+        margin-top: 0
+        margin-bottom: 0
+        color: $second-text
+
+        +sm-block()
+            font-size: 17px
+            line-height: 128%
+
+        +md-block()
+            font-size: 22px
+
+    &__button
+        margin-top: 16px
+
+        .button
+            +md-block()
+                min-height: 56px
+        
+
+    &--green
+        .for-whom-card__image
+            background-color: $porcelain-light
+
+    &--purple
+        .for-whom-card__image
+            background-color: $purple-light
+
+    &--orange
+        .for-whom-card__image
+            background-color: #FFE8DA

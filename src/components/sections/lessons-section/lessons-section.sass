@@ -1,0 +1,127 @@
+.lessons-section
+    +section-padding()
+    background-color: $black
+
+    &__container
+        +wrapper()
+
+    &__grid
+        display: grid
+        gap: 26px
+
+        +sm-block()
+            gap: 54px
+
+        +md-block()
+            display: flex
+            flex-direction: row-reverse
+            gap: 0
+            justify-content: space-between
+
+    &__image
+        margin-left: auto
+        margin-right: auto
+        display: flex
+        justify-content: center
+
+        +md-block()
+            justify-content: flex-end
+
+        img
+            display: block
+            max-width: 100%
+            width: 100%
+            height: auto
+
+
+    &__title
+        color: $white
+        text-align: center
+        margin-bottom: 24px
+        margin-top: 0
+        line-height: 120%
+        font-size: 22px
+
+        +sm-block()
+            margin-bottom: 32px
+            font-size: 28px
+            
+
+        +md-block()
+            text-align: left
+            font-size: 40px
+
+    &__content 
+        +sm-block()
+            display: flex
+            flex-direction: column
+            align-items: center
+
+        +md-block()
+            align-items: flex-start
+
+    &__list
+        color: $white
+        font-size: 17px
+        line-height: 28px
+        letter-spacing: 0.002em
+        margin-bottom: 0
+        margin-top: 0
+        list-style: none
+        padding-left: 0
+
+        +sm-block()
+            display: flex
+            gap: 100px
+            font-size: 22px
+            line-height: 24px
+
+        +md-block()
+            gap: 60px
+
+    &__list--inner
+        padding-left: 24px
+        list-style: disc
+        display: block
+        gap: unset
+        
+        +sm-block()
+            display: block
+
+        +md-block()
+            display: block
+
+        .lessons-section__item
+            margin-bottom: 10px
+
+            +sm-block()
+                margin-bottom: 24px
+
+    &__item
+        margin-bottom: 10px
+        font-family: $regular
+        +sm-block()
+            flex-shrink: 0
+            flex-grow: 1
+
+    &__button
+        margin-top: 24px
+
+        +sm-block()
+            margin-top: 32px
+            max-width: 344px
+            display: flex
+            justify-content: center
+            margin-left: auto
+            margin-right: auto
+
+        +md-block()
+            margin-left: 0
+            margin-right: 0
+        
+        .button
+            width: 100%
+
+    &__col-6-md
+        +md-block()
+            width: calc(50% - 8px)

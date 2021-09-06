@@ -1,0 +1,6 @@
+mixin lesson-card(title, text, className)
+    .lesson-card(class= className)
+        h5.lesson-card__title!= title
+        p.lesson-card__text!= text
+        .lesson-card__button 
+            +button("Записаться", "button--medium", 'open', 'sign-up-lesson')

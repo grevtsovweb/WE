@@ -1,0 +1,25 @@
+section.join-section.join-section--purple-dark
+    .join-section__container 
+        .join-section__main
+            .join-section__col-7-md
+                .join-section__header
+                    h2.join-section__title Готовы присоединиться к&nbsp;занятиям?
+                    p.join-section__subtitle Оставь заявку на пробный урок и максимально улучшай знания по кодингу!
+                    .join-section__image 
+                        img(src="img/join-section/rocket.svg", alt="Человек на ракете", width="164", height="125")
+            .join-section__col-5-md
+                .join-section__calendar 
+                    .calendly-inline-widget(data-url="https://calendly.com/grevtsov92" style="min-width:320px; height:630px;")
+                .join-section__form 
+                    form(action="#", method="post").form
+                        .form__group
+                            +field("Как тебя зовут? *", "text", "name", 'field--error')
+                        .form__group
+                            +field("Номер телефона *", "phone", "phone", 'field--success')
+                        .form__group
+                            +field("E-mail *", "email", "email", "field--warning")
+                        .form__button 
+                            +button("Оставить заявку", "button--full-width")
+                        p.form__text 
+                            | Нажимая на кнопку, я принимаю 
+                            a(href="#") условия соглашения

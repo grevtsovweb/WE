@@ -1,0 +1,18 @@
+section.header-section.header-section--coding
+    .header-section__top 
+        include ../../header/header-transparent
+    .header-section__container
+        .header-section__main 
+            .header-section__breadcrumbs 
+                include ../../breadcrumbs/breadcrumbs
+            .header-section__offer 
+                .header-section__offer-text
+                    h1.header-section__title Хочешь научиться кодингу? Самое время начать!
+                    p Мы покажем, что программирование – это легко. Оставь заявку на пробное занятие!
+                .header-section__offer-form 
+                    form.form(action="#", method="post") 
+                        .form__group
+                            +field("Номер телефона", "text", "phone")
+                        +button("Оставить заявку")   
+                .header-section__offer-image 
+                    include ../../../assets/img/header-section/developer.svg   

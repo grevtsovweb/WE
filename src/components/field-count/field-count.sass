@@ -1,0 +1,194 @@
+.field-count
+    width: 100%
+    height: 48px
+    border: 1px solid $border
+    box-sizing: border-box
+    border-radius: 6px
+    position: relative
+    overflow: hidden
+    padding-left: 46px
+    padding-right: 46px
+
+    +md-block()
+        padding-left: 0
+        padding-right: 24px
+
+
+    input
+        width: 100%
+        height: 100%
+        padding-left: 12px
+        border: none
+        font-size: 14px
+        line-height: 14px
+        color: $main-text
+        box-sizing: border-box
+        background-color: transparent
+        font-family: $medium
+        padding: 0
+        min-width: 52px
+        text-align: center
+
+        +md-block()
+            padding-left: 12px
+            min-width: none
+            text-align: left
+        
+        &:placeholder
+            font-size: 14px
+            color: $main-text
+            font-family: $medium
+
+    &__action
+        position: static
+        
+
+        +md-block()
+            position: absolute
+            content: ''
+            display: flex
+            flex-direction: column
+            right: 0
+            top: 0
+            height: 100%
+            width: 24px
+            border-left: 1px solid $border
+        
+            &::after
+                width: 100%
+                height: 1px
+                position: absolute
+                content: ''
+                top: 50%
+                left: 0
+                background-color: $border
+
+    &__action-button
+        width: 46px
+        height: 46px
+        background-color: transparent
+        border-radius: 0
+        border: none
+        font-family: $bold
+        color: $main-text
+        font-size: 14px
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        transition: color .3s, background-color .3s
+
+        +md-block()
+            height: 50%
+            width: 100%
+
+        &:hover
+            background-color: $accent
+            color: #ffffff
+
+        &--plus
+            position: absolute
+            content: ''
+            right: 0
+            top: 0
+            border-left: 1px solid $border
+
+            +md-block()
+                position: static
+                border-left: 0
+
+        &--minus
+            position: absolute
+            content: ''
+            left: 0
+            top: 0
+            border-right: 1px solid $border
+
+            +md-block()
+                position: static
+                border-right: none
+
+    &--no-mobile
+        width: 100%
+        height: 48px
+        border: 1px solid $border
+        box-sizing: border-box
+        border-radius: 6px
+        position: relative
+        overflow: hidden
+        padding-left: 0
+        padding-right: 24px
+
+        input
+            width: 100%
+            height: 100%
+            padding-left: 12px
+            border: none
+            font-size: 14px
+            line-height: 14px
+            color: $main-text
+            box-sizing: border-box
+            background-color: transparent
+            font-family: $medium
+            padding: 0
+            padding-left: 12px
+            min-width: none
+            text-align: left
+
+            &:placeholder
+                font-size: 14px
+                color: $main-text
+                font-family: $medium
+
+        .field-count__action
+            position: absolute
+            content: ''
+            display: flex
+            flex-direction: column
+            right: 0
+            top: 0
+            height: 100%
+            width: 24px
+            border-left: 1px solid $border
+        
+            &::after
+                width: 100%
+                height: 1px
+                position: absolute
+                content: ''
+                top: 50%
+                left: 0
+                background-color: $border
+
+
+        .field-count__action-button
+            height: 50%
+            width: 100%
+            background-color: transparent
+            border-radius: 0
+            border: none
+            font-family: $bold
+            color: $main-text
+            font-size: 14px
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+            transition: color .3s, background-color .3s
+
+            &:hover
+                background-color: $accent
+                color: #ffffff
+
+            &--plus
+                position: static
+                height: 50%
+                width: 100%
+
+
+            &--minus
+                position: static
+                height: 50%
+                width: 100%
+
+            

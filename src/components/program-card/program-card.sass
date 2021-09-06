@@ -1,0 +1,87 @@
+.program-card
+    padding-top: 24px
+    padding-bottom: 24px
+    padding-left: 20px
+    padding-right: 20px
+    border-radius: 32px
+    text-align: center
+    display: flex
+    flex-direction: column
+
+    +sm-block()
+        padding-right: 28px
+        padding-left: 28px
+        padding-top: 40px
+        padding-bottom: 40px
+        height: 100%
+        box-sizing: border-box
+
+    +md-block()
+        padding-left: 60px
+        padding-right: 60px
+        padding-top: 66px
+        padding-bottom: 66px
+
+    &__image
+        margin-bottom: 24px
+        display: flex
+        justify-content: center
+
+        +sm-block()
+            margin-bottom: 32px
+
+        img
+            display: block
+
+    &__title
+        font-size: 18px
+        line-height: 120%
+        margin-top: 0
+        margin-bottom: 16px
+
+        +sm-block()
+            margin-bottom: 20px
+            font-size: 22px
+
+        +md-block()
+            font-size: 28px
+
+
+    &__description
+        font-size: 15px
+        line-height: 133%
+        margin-top: 0
+        margin-bottom: 0
+        margin-bottom: 24px
+
+        +sm-block()
+            margin-bottom: 32px
+            font-size: 17px
+
+        +md-block()
+            max-width: 360px
+            margin-left: auto
+            margin-right: auto
+            font-size: 17px
+
+    &__button
+        margin-top: auto
+
+        .button
+            width: 100%
+
+            +sm-block()
+                width: auto
+
+    
+    &--purple
+        background-color: $purple-light
+
+    &--green
+        background-color: $porcelain-light
+
+    &--yellow
+        background-color: $beige
+
+    &--blue
+        background-color: $blue

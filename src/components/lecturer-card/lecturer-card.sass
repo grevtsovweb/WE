@@ -1,0 +1,61 @@
+.lecturer-card
+    text-align: center
+
+    &__image
+        width: 144px
+        height: 144px
+        border-radius: 50%
+        background-color: #C6DAFC
+        border: none
+        padding: 0
+        position: relative
+        opacity: 1
+        transition: opacity .3s
+        margin-bottom: 20px
+        margin-left: auto
+        margin-right: auto
+
+        &::before
+            position: absolute
+            content: ''
+            width: 160px
+            height: 160px
+            box-sizing: border-box
+            border-radius: 50%
+            border: 1px solid $yellow
+            left: 50%
+            top: 50%
+            transform: translate(-50%,-50%)
+            transition: border-color .3s
+
+    &__image-inner
+        width: 100%
+        height: 100%
+        border-radius: 50%
+        overflow: hidden
+        display: flex
+        justify-content: center
+        align-items: center
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+    &__name
+        font-size: 22px
+        line-height: 127%
+        margin-bottom: 12px
+        font-family: $bold
+        margin-top: 0
+
+    &__position
+        font-size: 17px
+        line-height: 129%
+        margin-top: 0
+        margin-bottom: 0
+
+        +sm-block()
+            max-width: 284px
+            margin-left: auto
+            margin-right: auto

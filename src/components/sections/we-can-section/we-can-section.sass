@@ -1,0 +1,123 @@
+.we-can-section
+    +section-padding()
+
+    &__title
+        margin-bottom: 24px
+        font-size: 22px
+        line-height: 120%
+        margin-top: 0
+
+        +sm-block()
+            margin-bottom: 32px
+            font-size: 28px
+            max-width: 614px
+
+        +md-block()
+            font-size: 40px
+            margin-bottom: 48px
+            max-width: 764px
+
+    &__container
+        +wrapper()
+
+    &__image
+        position: relative
+        margin-left: 16px
+        margin-right: 16px
+
+        +sm-block()
+            margin-left: 0
+            margin-right: 0
+
+        &::before
+            padding-top: 57%
+            content: ''
+            display: block
+            max-height: 500px
+
+            +md-block()
+                padding-top: 0
+                height: 500px
+
+    &__image-inner
+        position: absolute
+        content: ''
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        overflow: hidden
+        border-radius: 16px
+
+        +sm-block()
+            border-radius: 32px
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            display: block
+
+    &__slider-container
+        +sm-block()
+            +wrapper()
+
+
+    &__slider-wrapper
+
+        &.swiper
+            +sm-block()
+                overflow: visible 
+
+        // .swiper-wrapper
+            
+        //     // padding-left: 16px
+
+        //     // +sm-block()
+        //     //     padding-left: 32px
+        //     //     padding-right: 32px
+
+        // .swiper-pagination
+        //     position: static
+        //     margin-top: 30px
+        //     font-size: 17px
+        //     line-height: 22px
+        //     color: $black
+        //     font-family: $regular
+        //     padding-bottom: 10px
+
+        // .swiper-button-prev, .swiper-button-next
+        //     width: 36px
+        //     height: 36px
+        //     border-radius: 50%
+        //     background-color: transparent
+        //     display: flex
+        //     justify-content: center
+        //     align-items: center
+        //     top: unset
+        //     bottom: 5px
+        //     transition: opacity .3s
+
+        //     &:hover
+        //         opacity: .7
+
+        //     &::after
+        //         display: none
+
+
+        //     svg
+        //         width: 36px
+        //         height: 36px
+        //         fill: $black
+
+
+        // .swiper-button-prev
+        //     left: calc(50% - 75px)
+
+        
+
+        // .swiper-button-next
+        //     right: calc(50% - 75px)
+
+        //     svg
+        //         transform: rotate(180deg)

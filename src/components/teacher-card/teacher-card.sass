@@ -1,0 +1,150 @@
+.teacher-card
+    display: grid
+    gap: 24px
+    padding-top: 16px
+    padding-left: 16px
+    padding-right: 16px
+    padding-bottom: 24px
+    border-radius: 32px
+    border: 1px solid 
+
+    +sm-block()
+        padding: 32px
+        gap: 32px
+        grid-template-columns: auto 1fr
+
+    +md-block()
+        padding-top: 60px
+        padding-bottom: 60px
+        padding-right: 146px
+        padding-left: 100px
+        gap: 80px
+
+    &__image
+        width: 100%
+        height: 222px
+        border-radius: 20px
+        overflow: hidden
+        flex-shrink: 0
+
+        +sm-block()
+            width: 222px
+
+        +md-block()
+            width: 320px
+            height: 320px
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+    &__header
+        margin-bottom: 16px
+
+        +md-block()
+            margin-bottom: 22px
+
+    &__name
+        margin-top: 0
+        margin-bottom: 8px
+        font-size: 18px
+        line-height: 120%
+        font-family: $header
+
+        +sm-block()
+            font-size: 22px
+
+        +md-block()
+            font-size: 28px
+
+    &__university
+        font-size: 15px
+        line-height: 133%
+        font-family: $bold
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        +sm-block()
+            font-size: 17px
+            line-height: 129%
+
+        +md-block()
+            font-size: 22px
+            justify-content: flex-start
+
+    &__university-logo
+        margin-left: 8px
+        width: 32px
+        height: 32px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-shrink: 0
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: contain
+
+    &__description
+        font-size: 15px
+        line-height: 133%
+        margin-top: 0
+
+        +sm-block()
+            font-size: 17px
+            line-height: 129%
+
+        +md-block()
+            font-size: 22px
+
+        &:not(:last-child)
+            margin-bottom: 20px
+
+    &__footer
+        margin-top: 32px
+        display: grid
+        gap: 20px
+
+        +md-block()
+            grid-template-columns: auto auto
+            gap: 88px
+            margin-top: 48px
+
+    &__footer-item
+        font-size: 15px
+        line-height: 20px
+        letter-spacing: 0.005em
+
+    &__footer-item-bold
+        font-size: 20px
+        line-height: 20px
+        font-family: $bold
+        display: block
+
+    &--orange
+        border: 1px solid $orange-dark
+
+        .teacher-card__footer-item-bold
+            color: $orange-dark
+
+    &--green
+        border: 1px solid $porcelain-dark
+
+        .teacher-card__footer-item-bold
+            color: $porcelain-dark
+
+    &--blue
+        border: 1px solid #75ADE1
+
+        .teacher-card__footer-item-bold
+            color: #75ADE1
+
+    &--purple
+        border: 1px solid #925CE0
+
+        .teacher-card__footer-item-bold
+            color: #925CE0
+

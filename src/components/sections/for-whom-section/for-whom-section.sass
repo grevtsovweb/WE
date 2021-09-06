@@ -1,0 +1,52 @@
+.for-whom-section
+    +section-padding()
+    background-color: $blue
+
+    &__container
+        +wrapper()
+
+    &__header
+        text-align: center
+        margin-bottom: 24px
+
+        +sm-block()
+            margin-bottom: 32px
+
+        +md-block()
+            margin-bottom: 48px
+
+    &__title
+        text-align: center
+        margin-top: 0
+        margin-bottom: 0
+        font-size: 22px
+        line-height: 120%
+
+        +sm-block()
+            font-size: 28px
+            
+        +md-block()
+            font-size: 40px
+
+    &__subtitle
+        font-size: 15px
+        line-height: 133%
+        color: $black
+
+        +sm-block()
+            font-size: 17px
+            line-height: 129%
+            max-width: 684px    
+            margin-left: auto
+            margin-right: auto
+
+        +md-block()
+            font-size: 22px
+
+    &__main
+        display: grid
+        gap: 16px
+
+    
+    &--beige
+        background-color: $beige

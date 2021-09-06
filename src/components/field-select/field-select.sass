@@ -1,0 +1,51 @@
+.field-select
+    position: relative
+
+    label
+        font-size: 14px
+        color: $main-text
+        line-height: 24px
+        margin-bottom: 8px
+        display: inline-block
+
+
+    &__wrapper
+        position: relative
+
+        
+        &::before
+            content: ''
+            position: absolute
+            right: 0
+            top: 0
+            width: 24px
+            height: 24px
+            z-index: 5
+            pointer-events: none
+            right: 16px
+            top: 50%
+            transform: translateY(-50%)
+            background-image: url('../img/sprite/angle-down.svg')
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+
+    &__select
+        width: 100%
+        height: 54px
+        border: 2px solid $border
+        box-sizing: border-box
+        border-radius: 6px
+        overflow: hidden
+        padding-left: 20px
+        padding-right: 16px
+        font-family: $medium
+        font-size: 16px
+        line-height: 24px
+        position: relative
+        -webkit-appearance: none
+        appearance: none
+
+        
+        option
+            line-height: 40px

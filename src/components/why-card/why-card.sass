@@ -1,0 +1,138 @@
+.why-card
+    +sm-block()
+        display: flex
+        gap: 16px   
+
+    +md-block()
+        align-items: center
+        justify-content: space-between
+        padding-left: 98px
+        padding-right: 98px
+
+    &__content
+        +sm-block()
+            width: 53.5%
+
+        +md-block()
+            max-width: 484px
+
+    &__image
+        margin-bottom: 24px
+        display: flex
+        justify-content: center
+
+        +sm-block()
+            margin-bottom: 0
+
+        img
+            display: block
+            width: 254px
+            height: 148px
+
+            +md-block()
+                width: 100%
+                max-width: 100%
+                height: auto
+
+    &__title
+        font-size: 18px
+        line-height: 120%
+        margin-top: 0
+        margin-bottom: 16px
+
+        +sm-block()
+            font-size: 22px
+            margin-bottom: 24px
+
+        +md-block()
+            font-size: 28px
+
+
+    &__description
+        margin-top: 0
+        margin-bottom: 0
+        font-size: 17px
+        line-height: 129%
+
+        +md-block()
+            font-size: 22px
+            line-height: 127%
+
+    &--reverse
+        +sm-block()
+            flex-direction: row-reverse
+
+    &--winner
+        
+        .why-card__title
+            position: relative
+            
+            &::before
+                display: none
+                
+                +sm-block()
+                    display: block
+                    width: 28px
+                    height: 43px
+                    position: absolute
+                    content: ''
+                    left: -60px
+                    top: 0
+                    background-image: url('../img/decorative/flash-1.svg')
+                    background-size: contain
+                    background-repeat: no-repeat
+                    background-position: center
+
+
+        .why-card__image
+            +md-block()
+                width: 446px
+
+    &--motivation
+        .why-card__title
+            position: relative
+            
+            &::before
+                display: none
+                
+                +sm-block()
+                    display: block
+                    width: 53px
+                    height: 74px
+                    position: absolute
+                    content: ''
+                    left: -60px
+                    top: -48px
+                    background-image: url('../img/decorative/bright.svg')
+                    background-size: contain
+                    background-repeat: no-repeat
+                    background-position: center
+
+        .why-card__image
+            +md-block()
+                width: 430px
+
+    &--time
+        
+        .why-card__title
+            position: relative
+            
+            &::before
+                display: none
+                
+                +sm-block()
+                    display: block
+                    width: 78px
+                    height: 44px
+                    position: absolute
+                    content: ''
+                    right: -90px
+                    top: 0
+                    background-image: url('../img/decorative/corner.svg')
+                    background-size: cover
+                    background-repeat: no-repeat
+                    background-position: center
+
+        .why-card__image
+            +md-block()  
+                width: 378px

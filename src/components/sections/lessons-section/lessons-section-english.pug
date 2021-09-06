@@ -1,0 +1,22 @@
+section.lessons-section
+    .lessons-section__container
+        .lessons-section__grid
+            .lessons-section__col-6-md
+                .lessons-section__image
+                    picture
+                        source(srcset="img/lessons/lessons-english-md.webp", media="(min-width: 992px)")
+                        source(srcset="img/lessons/lessons-english-sm.webp", media="(min-width: 767px)")
+                        img(src="img/lessons/lessons-english.webp", alt="Сила английского языка, о которой знают все", width="280", height="270", loading="lazy")
+            .lessons-section__col-6-md 
+                .lessons-section__content 
+                    h3.lessons-section__title Сила английского языка, о которой знают все
+
+                    ul.lessons-section__list.lessons-section__list--inner
+                        li.lessons-section__item Нет проблем в школе, все приходят списывать твою домашку по английскому :)
+                        li.lessons-section__item Новые знакомства и общение без границ!
+                        li.lessons-section__item E-mail на английском языке теперь не повод стрессовать, а возможность показать знания.
+                        li.lessons-section__item Чтение выдающихся писателей в оригинале.
+                        li.lessons-section__item Любимые песни и сериалы теперь не требуют перевода на русский.
+                        li.lessons-section__item Изучать научные статьи в оригинале.
+                    .lessons-section__button 
+                        +button("Become our student", null, 'open', 'request')

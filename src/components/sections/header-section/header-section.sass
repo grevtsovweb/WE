@@ -1,0 +1,241 @@
+.header-section
+    padding-bottom: 46px
+    background-color: $yellow
+    padding-top: 75px
+
+    +sm-block()
+        padding-bottom: 64px
+
+    +md-block()
+        padding-bottom: 120px
+
+    &__main
+        padding-top: 24px
+
+        +sm-block()
+            padding-top: 32px
+
+    &__breadcrumbs
+        margin-bottom: 16px
+
+        +sm-block()
+            margin-bottom: 32px
+
+    &__container
+        +wrapper()
+
+    &__offer
+
+        +sm-block()
+            display: flex
+            align-items: flex-start
+            flex-wrap: wrap
+            justify-content: space-between
+
+        +md-block()
+            margin-top: 70px
+
+        &--main
+            +md-block()
+                margin-top: 88px
+
+            .header-section__offer-image
+                +md-block()
+                    width: 390px
+                    left: 20px
+                    margin-top: -50px
+
+    &__offer-text
+
+        +sm-block()
+            width: 68.2%
+            order: 0
+            padding-right: 24px
+            box-sizing: border-box
+
+        +md-block()
+            width: 58%
+
+        p
+            margin-top: 0
+            margin-bottom: 0
+            font-size: 17px
+            line-height: 133%
+
+            +md-block()
+                font-size: 22px
+
+    &__offer-image
+        display: flex
+        justify-content: center
+        margin-top: 28px
+        max-width: 320px
+        margin-left: auto
+        margin-right: auto
+
+        +sm-block()
+            margin-top: 0
+            order: 0
+            width: 31.8%
+            margin-left: 0
+            margin-right: 0
+            max-width: none
+
+        +md-block()
+            width: 41%
+            position: relative
+
+        svg
+            width: 100%
+            height: auto
+
+            +md-block()
+                position: absolute
+                left: 0
+                top: 0
+
+    &__features
+        list-style: none
+        padding: 0
+        margin: 0
+        display: grid
+        flex-wrap: wrap
+        gap: 32px 16px
+        margin-top: 24px
+        grid-template-columns: 1fr 1fr
+
+        +sm-block()
+            grid-template-columns: 1fr 1fr 1fr 1fr
+            margin-top: 28px
+            
+        +md-block()
+            gap: 48px
+            margin-top: 105px
+            
+
+    &__features-item
+        padding-top: 22px
+        position: relative
+        flex-basis: calc(50% - 8px)
+        font-size: 15px
+        line-height: 20px
+
+        +md-block()
+            font-size: 17px
+            line-height: 22px
+            letter-spacing: 0.02em
+            flex-basis: calc(25% - 36px)
+
+
+        &::before   
+            width: 100%
+            height: 2px
+            position: absolute
+            content: ''
+            border-radius: 12px
+            left: 0
+            width: 100%
+            top: 0
+            background-color: $black
+
+
+    &__title
+        margin-bottom: 16px
+        margin-top: 0
+        vertical-align: baseline
+
+        +sm-block()
+            margin-bottom: 32px
+
+    &__title-icon
+        display: inline-block
+        margin-bottom: 2px
+
+        img
+            display: block
+            width: 28px 
+            height: auto
+            margin-left: 10px
+
+            +sm-block()
+                width: 46px
+
+            +md-block()
+                margin-bottom: 2px
+                margin-left: 16px
+
+
+    &__offer-form
+        margin-top: 16px
+
+        +sm-block()
+            margin-top: 32px
+            flex-grow: 1
+            order: 1
+
+        .form
+            display: grid
+            gap: 12px
+
+            +sm-block()
+                display: flex
+                flex-direction: row
+                align-items: flex-start
+                
+        .form__group
+            min-width: 284px
+            margin-bottom: 0
+
+        .button
+            width: 100%
+
+            +sm-block()
+                width: auto
+
+    &--physics
+        background-color: $porcelain-light
+
+        .header-section__offer-image
+            +md-block()
+                margin-top: -30px
+
+            svg
+                +md-block()
+                    width: 430px
+                    left: 20px  
+
+    &--coding
+        background-color: $beige
+
+        .header-section__offer-image
+            svg
+                +md-block()
+                    width: 396px
+                    left: 20px  
+
+    &--math
+        background-color: $purple-light
+
+        .header-section__offer-image
+            svg
+                +md-block()
+                    width: 437px
+                    left: 20px  
+
+    &--english
+        background-color: $blue
+
+        .header-section__offer-image
+            +md-block()
+                margin-top: -10px
+            svg
+                +md-block()
+                    width: 408px
+                    left: 20px  
+
+    &--about-us
+        background-color: #F6F6F4
+
+        +md-block()
+            padding-bottom: 170px
+

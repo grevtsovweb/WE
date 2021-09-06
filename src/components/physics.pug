@@ -1,0 +1,44 @@
+include button/button
+include mixins/svg
+include field/field
+include quote/quote 
+include feature/feature
+include lesson-card/lesson-card
+include price-card/price-card
+include teacher-card/teacher-card
+include level-card/level-card
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
+        link(rel="stylesheet", href="styles/style.css")
+        title WeScience
+        meta(name="description", content="Description")
+        meta(name="keywords", content="Description")
+        link(rel="icon" href="favicon.svg")
+        link(rel="preload", href="fonts/MullerBold.woff2", as="font", type="font/woff2", crossorigin="anonymous")
+        link(rel="preload", href="fonts/MullerRegular.woff2", as="font", type="font/woff2", crossorigin="anonymous")
+        link(rel="preload", href="fonts/MullerMedium.woff2", as="font", type="font/woff2", crossorigin="anonymous")
+    body.page.js-page
+        
+        include sections/header-section/header-section-physics
+        include sections/quote-section/quote-section-feynman
+        include sections/article-section/article-section
+        include sections/lessons-section/lessons-section
+        include sections/everything-section/everything-section-white
+        include sections/level-section/level-section
+        include sections/price-section/price-section
+        include sections/teacher-section/teacher-section
+        
+        include sections/join-section/join-section-green
+        include footer/footer
+
+        include modal/modal
+
+ 
+    script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
+    script(type="text/javascript", src="https://assets.calendly.com/assets/external/widget.js", async)
+    script(src="js/main.js")

@@ -1,0 +1,15 @@
+.quote-section.quote-section--purple
+    .quote-section__container 
+        .quote-section__header.quote-section__header--medium
+            h2.quote-section__title
+                | Английский математик 
+                span.quote-section__title--yellow Годфри Харди
+                | однажды сказал:
+        .quote-section__main 
+            +quote("img/quote/godfrey", "Годфри Харди", "Большинство людей настолько боятся самого названия математики, что они готовы совершенно искренне преувеличивать свою неспособность к математике.")
+        .quote-section__offer.quote-section__offer--divider
+            h5.quote-section__offer-title 
+                span.quote-section__offer-title--yellow Мы научим не бояться! 
+                | Более того, определим уровень знаний и&nbsp;выявим, на&nbsp;что нужно сделать упор в&nbsp;подготовке
+            .quote-section__offer-button 
+                +button("Записаться на пробный урок", null, 'open', 'sign-up-lesson')

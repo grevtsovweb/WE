@@ -1,0 +1,39 @@
+.breadcrumbs
+    margin: 0
+    list-style: none
+    padding: 0
+    display: flex
+    font-family: $regular
+    color: $black
+    font-size: 14px
+    line-height: 20px
+
+    &__item
+        padding: 0
+        white-space: nowrap
+
+        &:not(:first-child)
+            padding-left: 8px
+
+    &__link
+        color: $blue-berry-dark
+        display: flex
+        text-decoration: none
+        transition: opacity .2s
+        white-space: nowrap
+
+        &:hover
+            opacity: .8
+
+    &__link-icon
+        display: flex
+        justify-content: center
+        align-items: center
+        transform: rotate(-90deg)
+        margin-left: 4px
+
+        svg
+            width: 20px
+            height: 20px
+            fill: $blue-berry-dark
+            

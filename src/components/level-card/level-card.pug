@@ -1,0 +1,6 @@
+mixin level-card(className, buttonColor, title, text)
+    .level-card(class= className)
+        h4.level-card__title= title
+        p.level-card__text= text
+        .level-card__button
+            button.button(class= buttonColor, data-modal="open", data-value="sign-up-lesson") Записаться

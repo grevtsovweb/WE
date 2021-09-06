@@ -1,0 +1,75 @@
+header.header
+    .header__container 
+        nav.header__nav 
+            a(href="#").header__logo 
+                img(src="img/logo/logo-dark.svg", alt="WeSciense", width="100", height="28", title="WeSciense", aria-hidden="true")
+            ul.header__main-nav 
+                li.header__main-nav-item.header__main-nav-item--dropdown
+                    span.header__main-nav-link.header__main-nav-link--dropdown(tabindex="0") 
+                        | Все предметы
+                        span.header__main-nav-icon 
+                            +svg("24", "24", "icon-dropdown")
+                        .header__dropdown.header__dropdown--subjects 
+                            .header__dropdown-inner
+                                ul.header__nav-list.header__nav-list--divider
+                                    li.header__nav-item
+                                        a.header__nav-link(href="#")
+                                            span.header__nav-icon 1
+                                            | Математика
+                                    li.header__nav-item
+                                        a.header__nav-link(href="#")
+                                            span.header__nav-icon 1
+                                            | Физика
+                                    li.header__nav-item
+                                        a.header__nav-link(href="#")
+                                            span.header__nav-icon 1
+                                            | Компьютерные науки
+                                    li.header__nav-item
+                                        a.header__nav-link(href="#")
+                                            span.header__nav-icon 1
+                                            | Английский язык
+                li.header__main-nav-item 
+                    a.header__main-nav-link(href="#") О WeScience
+
+            .header__user-block 
+                .header__user-item.mobile-hidden
+                    a.header__phone(href="tel:+74953747723") +7 (495) 374-77-23
+                .header__user-item 
+                    +button("Записаться", "button--medium")
+                .header__user-item 
+                    button.header__user-button(type="button")
+                        span.header__user-icon 
+                            +svg("24", "24", "icon-account")
+                        | Войти
+            .header__nav-trigger-block
+                button.header__nav-trigger.header__nav-trigger--active(type="button")
+                    +svg("24", "24", "icon-close", "header__nav-trigger--close")
+                    +svg("24", "24", "icon-hamburger", "header__nav-trigger--open")
+                .header__dropdown
+                    .header__dropdown-inner
+                        ul.header__nav-list.header__nav-list--divider
+                            li.header__nav-item
+                                a.header__nav-link(href="#")
+                                    span.header__nav-icon 1
+                                    | Математика
+                            li.header__nav-item
+                                a.header__nav-link(href="#")
+                                    span.header__nav-icon 1
+                                    | Физика
+                            li.header__nav-item
+                                a.header__nav-link(href="#")
+                                    span.header__nav-icon 1
+                                    | Компьютерные науки
+                            li.header__nav-item
+                                a.header__nav-link(href="#")
+                                    span.header__nav-icon 1
+                                    | Английский язык
+                        ul.header__nav-list
+                            li.header__nav-item
+                                a.header__nav-link(href="#")
+                                    span.header__nav-icon 1
+                                    | О нас
+                            li.header__nav-item
+                                a.header__nav-link(href="tel:+74953747723")
+                                    span.header__nav-icon 1
+                                    | +7 (495) 374-77-23

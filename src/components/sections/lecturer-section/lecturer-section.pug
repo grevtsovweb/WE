@@ -1,0 +1,29 @@
+section.lecturer-section
+    .lecturer-section__container 
+        .lecturer-section__header 
+            h2.lecturer-section__title Наши лекторы
+            p.lecturer-section__subtitle Лекторы являются важнейшей частью нашей работы и нашей гордостью. Каждый занимается научными исследованиями, закончил ведущий ВУЗ и увлечен популяризацией науки.
+        .swiper-container.swiper-container--mobile-only
+            .swiper.js-slider-lecture
+                .lecturer-section__main.swiper-wrapper
+                    .swiper-slide.lecturer-section__col
+                        +lecturer-card("img/teacher/teacher-144х144.jpg", "Альберт Горяев", "Механико-математический факультет МГУ")
+                    .swiper-slide.lecturer-section__col
+                        +lecturer-card("img/teacher/teacher-2-144х144.jpg", "Альберт Горяев", "Механико-математический факультет МГУ")
+                    .swiper-slide.lecturer-section__col
+                        +lecturer-card("img/teacher/teacher-144х144.jpg", "Альберт Горяев", "Механико-математический факультет МГУ")
+                    .swiper-slide.lecturer-section__col
+                        +lecturer-card("img/teacher/teacher-2-144х144.jpg", "Альберт Горяев", "Механико-математический факультет МГУ")
+                    .swiper-slide.lecturer-section__col
+                        +lecturer-card("img/teacher/teacher-144х144.jpg", "Альберт Горяев", "Механико-математический факультет МГУ")
+                    .swiper-slide.lecturer-section__col
+                        +lecturer-card("img/teacher/teacher-2-144х144.jpg", "Альберт Горяев", "Механико-математический факультет МГУ")
+                    .swiper-slide.lecturer-section__col
+                        +lecturer-card("img/teacher/teacher-144х144.jpg", "Альберт Горяев", "Механико-математический факультет МГУ")
+                    .swiper-slide.lecturer-section__col
+                        +lecturer-card("img/teacher/teacher-2-144х144.jpg", "Альберт Горяев", "Механико-математический факультет МГУ")
+                .swiper-pagination
+                .swiper-button-prev
+                    +svg("36", "36", "icon-arrow-round")
+                .swiper-button-next
+                    +svg("36", "36", "icon-arrow-round")

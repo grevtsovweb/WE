@@ -1,0 +1,6 @@
+mixin feature(img, title, text, className)
+    .feature(class= className)
+        .feature__img 
+            img(src= img, alt= title)
+        p.feature__title!= title 
+        p.feature__text= text

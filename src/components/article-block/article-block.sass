@@ -1,0 +1,132 @@
+.article-block
+    display: grid
+    gap: 24px
+
+    +sm-block()
+        display: flex
+        justify-content: space-between
+        gap: 0
+        grid-template-columns: auto auto
+
+    +md-block()
+        
+
+    &__text
+        font-size: 17px
+        line-height: 129%
+        margin-top: 0
+        margin-bottom: 0
+
+        + .article-block__text
+            margin-top: 22px
+
+        +md-block()
+            font-size: 22px
+
+    &__content
+        +sm-block()
+            width: 62.5%
+            margin-left: auto
+        +md-block()
+            width: 58%
+            
+
+    &__image
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 24px
+        border: 1px solid $porcelain-dark
+        padding-top: 20px
+        padding-bottom: 20px
+        padding-left: 20px
+        padding-right: 20px
+        height: 200px
+        box-sizing: border-box
+
+        +sm-block()
+            width: 200px
+            flex-shrink: 0
+
+        +md-block()
+            margin-left: auto
+            margin-right: auto
+            width: 320px
+            height: 320px
+            padding-left: 40px
+            padding-right: 40px
+
+        img
+            +md-block()
+                width: 100%
+                max-width: 100%
+                height: auto
+
+        &--orange
+            border: 1px solid $orange-dark
+
+        &--gray
+            border: 1px solid $disabled
+
+        &--center-md
+            +md-block()
+                margin-left: 0
+
+        &--full
+            +sm-block()
+                padding: 0
+                border: none
+
+            img
+                +sm-block()
+                    width: 100%
+                    height: auto
+
+                +md-block()
+                    max-width: 272px
+
+    &__title
+        font-size: 22px
+        line-height: 120%
+        margin-bottom: 24px
+        margin-top: 0
+
+        +sm-block()
+            font-size: 28px
+            margin-bottom: 32px
+
+        +md-block()
+            font-size: 40px
+
+    &__button
+        margin-top: 24px
+
+        +sm-block()
+            margin-top: 32px
+
+        .button
+            width: 100%
+
+            +sm-block()
+                width: auto
+
+    &--reverse
+        +sm-block()   
+            flex-direction: row-reverse
+
+        .article-block__content
+            
+            +sm-block()
+                margin-left: 0
+                margin-right: auto
+
+    &--lesson
+        .article-block__content
+            +sm-block()
+                margin-left: 0
+                margin-right: auto
+
+    // &--center-sm
+    //     +sm-block()
+    //         align-items: center
+

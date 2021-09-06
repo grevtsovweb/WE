@@ -1,0 +1,113 @@
+.join-section
+    +section-padding()
+
+
+    &__container
+        +wrapper()
+
+        +sm-block()
+            max-width: 524px
+
+        +md-block()
+            +wrapper()
+
+    &__header
+        text-align: center
+        margin-bottom: 16px
+        
+        +sm-block()
+            margin-bottom: 32px
+
+        +md-block()
+            text-align: left
+            margin-bottom: 0
+
+    &__image
+        display: none
+
+        +sm-block()
+            display: block
+            position: absolute
+            bottom: 0
+            left: -85px
+            width: 164px
+
+        +md-block()
+            position: static
+            width: 280px
+            margin-left: auto
+            margin-top: 18px
+
+        img
+            display: block
+            width: 100%
+            height: auto
+            max-width: 100%
+
+    &__title
+        margin-bottom: 16px
+        font-size: 22px
+        line-height: 120%
+        margin-top: 0
+
+        +sm-block()
+            margin-bottom: 24px
+            font-size: 28px
+
+        +md-block()
+            font-size: 40px
+            margin-bottom: 32px
+
+    &__subtitle
+        margin-bottom: 0
+        margin-top: 0
+
+        +md-block()
+            max-width: 582px
+
+    &__main
+        position: relative
+        +md-block()
+            display: flex
+            gap: 16px
+
+    &__col-7-md
+        +md-block()
+            width: calc(58.33% - 8px)
+
+    &__col-5-md
+        +md-block()
+            width: calc(41.67% - 8px)
+
+    &__form
+        +sm-block()
+            max-width: 344px
+            margin-left: auto
+            margin-right: auto
+
+        +md-block()
+            max-width: none
+            padding-left: 52px
+            padding-right: 52px
+            display: none
+
+    &__calendar 
+        display: none
+
+        +md-block()
+            display: block
+
+    &--beige
+        background-color: $beige
+
+    &--green
+        background-color: $porcelain-light
+
+    &--blue
+        background-color: $blue
+
+    &--purple
+        background-color: #EDEEFF 
+
+    &--purple-dark
+        background-color: $purple-light

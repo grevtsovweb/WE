@@ -1,0 +1,69 @@
+include ../input/input
+include ../button/button
+include ../mixins/svg
+
+.modal__overlay.js-modal.hidden
+    .modal__wrapper.modal__wrapper-js
+        .modal
+            .modal__inner.js-sign-up-lesson.hidden
+                button.modal__close.js-close-modal(data-modal="close", data-value="sign-up-lesson")
+                    +svg(28,28,"icon-close")
+                .modal__button-online 
+                    button.button(disabled) Онлайн занятия
+                .modal__header
+                    h4.modal__title Запись на онлайн занятия
+                .modal__form 
+                    form(action="#", method="post").form
+                        .form__group
+                            +field("Телефон *", "phone", "phone")
+                        .form__group
+                            +field("Почта *", "email", "email")
+                        .form__group
+                            +field("Имя ученика *", "text", "name")
+                        .form__button 
+                            +button("Оставить заявку", "button--full-width")
+                        p.form__text 
+                            | Нажимая на кнопку, я принимаю 
+                            a(href="#") условия соглашения
+            .modal__inner.js-success.hidden
+                button.modal__close.js-close-modal(data-modal="close", data-value="success")
+                    +svg(28,28,"icon-close")
+                .modal__header
+                    .modal__image 
+                        img(src="img/join-section/rocket.svg", alt="Ваша заявка принята!", width="280", height="214")
+                    h4.modal__title Ваша заявка принята!
+                    p.modal__subtitle Не уходите далеко! Скоро мы свяжемся с вами для уточнения деталей.
+                .modal__button 
+                    +button("Отлично", "button--full-width", "close", 'success')
+            .modal__inner.js-request.hidden
+                button.modal__close.js-close-modal(data-modal="close", data-value="request")
+                    +svg(28,28,"icon-close")
+                .modal__header.modal__header--mb-16
+                    h4.modal__title Оставить заявку
+                    p.modal__subtitle Выбери предметы, которые тебе интересно изучать
+                .modal__form 
+                    form(action="#", method="post").form
+                        .form__group.modal__checkbox-group 
+                            label.modal__checkbox
+                                input(type="checkbox", name="math")
+                                span Математика
+                            label.modal__checkbox
+                                input(type="checkbox", name="physics")
+                                span Физика
+                            label.modal__checkbox
+                                input(type="checkbox", name="computer")
+                                span Компьютерные науки
+                            label.modal__checkbox
+                                input(type="checkbox", name="english")
+                                span Английский язык
+                        .form__group
+                            +field("Как тебя зовут? *", "text", "name")
+                        .form__group
+                            +field("Номер телефона *", "phone", "phone")
+                        .form__group
+                            +field("E-mail *", "email", "email")
+                        .form__button 
+                            +button("Оставить заявку", "button--full-width")
+                        p.form__text 
+                            | Нажимая на кнопку, я принимаю 
+                            a(href="#") условия соглашения

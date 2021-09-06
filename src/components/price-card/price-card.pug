@@ -1,0 +1,34 @@
+mixin price-card(title, price, className, offer)
+    .price-card(class= className)
+        //- if(offer)
+        //-     .price-card__offer Выбор 62% родителей!
+        .price-card__header
+            p.price-card__class= title
+            p.price-card__description Первые шаги и один меся занятий физикой до 3 раз в неделю
+        .price-card__body
+            .price-card__price-block 
+                .price-card__price 
+                    span.price-card__price-main= price
+                    | за урок
+                //- .price-card__price-for-all 
+                //-     span.price-card__price-for-all--bold 7999 руб. 
+                //-     | за всё
+            .price-card__button 
+                +button("Записаться", "button--medium", "open", "sign-up-lesson")
+        .price-card__footer
+            ul.price-card__list 
+                li.price-card__list-item
+                    span.price-card__check.price-card__check--active
+                        +svg("10", "10", "icon-check-2")
+                    | Домашние задания
+                li.price-card__list-item
+                    span.price-card__check.price-card__check--active
+                        +svg("10", "10", "icon-check-2")
+                    | Успеваемость и отчетность
+                li.price-card__list-item
+                    span.price-card__check.price-card__check--active
+                        +svg("10", "10", "icon-check-2")
+                    | Домашние задания
+                li.price-card__list-item
+                    span.price-card__check
+                    | Успеваемость и отчетность

@@ -1,0 +1,110 @@
+.technology-section
+    +section-padding()
+    background-color: $black
+
+
+    &__container
+        +wrapper()
+
+    &__title
+        text-align: left
+        margin-top: 0
+        margin-bottom: 24px
+        font-size: 22px
+        line-height: 120%
+        color: $white
+
+        +sm-block()
+            text-align: center
+            margin-bottom: 32px
+            font-size: 28px
+            
+
+        +md-block()
+            font-size: 40px
+            max-width: 912px
+            margin-left: auto
+            margin-right: auto
+            margin-bottom: 48px
+
+    &__main
+        display: grid
+        gap: 24px
+
+        +sm-block()
+            max-width: 584px
+            margin-left: auto
+            margin-right: auto
+            gap: 44px
+
+        +md-block()
+            max-width: none
+            grid-template-columns: 1fr 1fr
+            gap: 16px
+
+    &__col
+        display: grid
+        gap: 24px
+        margin: 0
+        list-style-type: disc
+        color: $white
+        list-style: none
+        padding-left: 24px
+        
+        +sm-block()
+            gap: 44px
+
+    &__item
+        color: $white
+        display: block
+        position: relative
+
+        &::before
+            content: ""
+            background-color: $white
+            font-weight: bold
+            display: inline-block
+            position: absolute
+            top: 8px
+            left: -14px
+            width: 3px
+            height: 3px
+            border-radius: 50%
+
+        +sm-block()
+            flex-direction: row
+
+        +md-block()
+            padding-right: 22px
+            box-sizing: border-box
+
+    &__item-image
+        width: 100px
+        height: 100px
+        border-radius: 50%
+        background-color: #322F5A
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-shrink: 0
+
+        img
+            font-size: 12px
+
+    &__item-text
+        font-size: 17px
+        line-height: 127%
+
+        +sm-block()
+            font-size: 22px
+            margin-top: 10px
+
+    &__button
+        display: flex
+        justify-content: center
+        margin-top: 34px
+
+        +md-block()
+            margin-top: 60px
+        
+

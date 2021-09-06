@@ -1,0 +1,130 @@
+.quote-section
+    +section-padding()
+
+    &__container
+        +wrapper()
+
+    &__title
+        font-size: 22px
+        line-height: 120%
+        letter-spacing: 0.02em
+        font-family: $header
+        color: $white
+        text-align: center
+        margin-top: 0
+        margin-bottom: 0
+
+        +sm-block()
+            font-size: 28px
+
+        &--yellow
+            color: $yellow
+
+    &__header
+        margin-bottom: 32px
+        max-width: 640px
+        margin-left: auto
+        margin-right: auto
+
+        +sm-block()
+            margin-bottom: 48px
+
+        +md-block()
+            margin-bottom: 36px
+
+        &--medium
+            max-width: 780px
+
+    &__main
+        display: grid
+        gap: 24px
+
+        &--medium
+            max-width: 1096px
+
+            .quote
+
+                &:nth-child(odd)
+                    align-self: flex-start
+
+                &:nth-child(even)
+                    margin-left: auto
+
+    &__offer
+        padding-top: 32px
+        margin-top: 32px
+
+        +sm-block()
+            padding-top: 48px
+            margin-top: 48px
+
+        +md-block()
+            padding-top: 60px
+            margin-top: 60px
+
+        &--divider
+            border-top: 1px solid $white
+
+    &__offer-title
+        color: $white
+        text-align: center
+        font-size: 18px
+        line-height: 120%
+        margin-top: 0
+        margin-bottom: 0
+        margin-left: auto
+        margin-right: auto
+        
+
+        +sm-block()
+            font-size: 22px
+
+        +md-block()
+            font-size: 28px
+            max-width: 928px
+
+        &--decor
+            position: relative
+            
+            &::before
+                display: none
+                position: absolute
+                content: ''
+                width: 52px
+                height: 74px
+                background-image: url('../img/decorative/title-decor.svg')
+                background-size: cover
+                background-position: center
+                background-repeat: no-repeat
+
+                +sm-block()
+                    display: block
+                    top: -45px
+                    left: -49px
+
+        &--yellow
+            color: $yellow
+
+    &__offer-button
+        margin-top: 24px
+        display: flex
+        justify-content: center
+
+        +md-block()
+            margin-top: 26px
+
+        .button
+            width: 100%
+
+            +sm-block()
+                width: auto
+
+
+    &--green
+        background-color: $porcelain-dark
+    
+    &--orange
+        background-color: $orange-dark
+
+    &--purple
+        background-color: $purple

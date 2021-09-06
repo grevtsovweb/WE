@@ -1,0 +1,17 @@
+.quote-section.quote-section--orange
+    .quote-section__container 
+        .quote-section__header.quote-section__header--medium
+            h2.quote-section__title
+                | Почему нужно начать 
+                span.quote-section__title--yellow программировать 
+                | как можно раньше?
+        .quote-section__main.quote-section__main--medium
+            +quote("img/quote/gates", "Билл Гейтс", "<b>Билл Гейтс</b> начал заниматься программированием в 13 лет, тогда еще на Altair Basic")
+            +quote("img/quote/mask", "Илон Маск", "<b>Илон Маск</b> начал программировать еще раньше, а уже в 12 лет продал свою первую видео игру \"Blastar\" за 500$. Потом были Zip2, PayPal, Tesla, SpaceX.")
+            +quote("img/quote/zuckerberg", "Марк Цукерберг", "<b>Марк Цукерберг</b>, социальной сетью которого пользуются большинство родителей наших учеников, начал заниматься кодингом в 11 лет по книжке \"C++ for dummies\"")
+        .quote-section__offer
+            h5.quote-section__offer-title 
+                span.quote-section__offer-title--yellow.quote-section__offer-title--decor В&nbsp;юном возрасте 
+                | намного проще развивать способности и&nbsp;изучать всё новое. Может быть пора попробовать и&nbsp;тебе?
+            .quote-section__offer-button 
+                +button("Записаться на пробный урок", null, 'open', 'sign-up-lesson')

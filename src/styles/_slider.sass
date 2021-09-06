@@ -1,0 +1,63 @@
+.swiper-container
+    // .swiper
+    //     +sm-block()
+    //         overflow: visible 
+
+    .swiper-wrapper
+        
+        // padding-left: 16px
+
+        // +sm-block()
+        //     padding-left: 32px
+        //     padding-right: 32px
+
+    .swiper-pagination
+        position: static
+        margin-top: 30px
+        font-size: 17px
+        line-height: 22px
+        color: $black
+        font-family: $regular
+        padding-bottom: 10px
+
+    .swiper-button-prev, .swiper-button-next
+        width: 36px
+        height: 36px
+        border-radius: 50%
+        background-color: transparent
+        display: flex
+        justify-content: center
+        align-items: center
+        top: unset
+        bottom: 5px
+        transition: opacity .3s
+
+        &:hover
+            opacity: .7
+
+        &::after
+            display: none
+
+
+        svg
+            width: 36px
+            height: 36px
+            fill: $black
+
+
+    .swiper-button-prev
+        left: calc(50% - 75px)
+
+
+
+    .swiper-button-next
+        right: calc(50% - 75px)
+
+        svg
+            transform: rotate(180deg)
+
+    &--mobile-only
+
+        .swiper-button-next, .swiper-button-prev, .swiper-pagination
+            +sm-block()
+                display: none

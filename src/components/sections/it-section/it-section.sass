@@ -1,0 +1,20 @@
+.it-section
+    +section-padding()
+
+    &__container
+        +wrapper()
+
+    &__title
+        +section-title()
+
+    &__main
+        display: grid
+        gap: 16px
+
+        +sm-block()
+            grid-template-columns: 1fr 1fr
+
+        +md-block()
+            grid-template-columns: 1fr 1fr 1fr
+
+    &__col

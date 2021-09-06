@@ -1,0 +1,105 @@
+.form-range 
+
+    &__header
+        display: flex
+        justify-content: space-between
+        margin-bottom: 30px
+
+    &__header-input-wrapper
+        position: relative
+
+        &::after
+            position: absolute
+            right: 8px
+            top: 0
+            content: 'руб'
+            width: 24px
+            height: 100%
+            background-color: transparent
+            font-size: 14px
+            line-height: 40px
+            color: $main-text
+            font-family: $light
+
+    &__header-input
+        font-size: 14px 
+        line-height: 24px
+        font-family: $medium
+        background-color: #ffffff
+        border: 2px solid $border
+        border-radius: 4px
+        color: $main-text
+        padding-left: 12px
+        padding-right: 32px
+        padding-top: 7px
+        padding-bottom: 7px
+        height: 40px
+        box-sizing: border-box
+        width: 100%
+        max-width: 105px
+        color: $main-text
+        outline: none
+        transition: border .3s
+
+    &__bar-wrapper
+        position: relative
+        width: 100%
+
+
+    &__bar
+        width: 100%
+        position: relative
+        height: 4px
+        background-color: #E9E7FE
+        border-radius: 4px
+        overflow: hidden
+
+
+    &__bar-inner
+        background-color: $accent
+        position: absolute
+        content: ''
+        left: 0
+        right: 0
+        height: 100%
+
+    &__button
+        width: 18px
+        height: 18px
+        border-radius: 50%
+        background: $accent
+        padding: 0
+        border: none
+        position: absolute
+        content: ''
+        cursor: pointer
+        top: -7px
+        z-index: 2
+        transition: background .3s
+
+        &::before
+            position: absolute
+            content: ''
+            width: 28px
+            height: 28px
+            left: -5px
+            top: -5px
+            border-radius: 50%
+            background-color: rgba(121, 104, 248, 0.2)
+            transform: scale(0)
+            transform-origin: center
+            transition: transform .3s
+
+        &:hover
+            background: #614FE2
+
+            &::before
+                transform: scale(1)
+        
+
+        &--left
+            left: 0
+            
+
+        &--right
+            right: 0

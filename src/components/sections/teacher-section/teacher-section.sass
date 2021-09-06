@@ -1,0 +1,88 @@
+.teacher-section
+    +section-padding()
+
+    &__container
+        +wrapper()
+
+    &__title
+        +section-title()
+
+    &__tab-buttons
+        list-style: none
+        margin: 0
+        padding: 0
+        display: flex
+        justify-content: center
+
+    &__tab-button-item
+        margin-left: 11px
+        margin-right: 11px
+        
+
+    &__tab-items
+        margin-top: 32px
+
+    &__tab-item
+        display: block
+
+    &__button
+        width: 72px
+        height: 72px
+        border-radius: 50%
+        background-color: #C6DAFC
+        border: none
+        padding: 0
+        cursor: pointer
+        position: relative
+        opacity: 1
+        transition: opacity .3s
+
+        &:hover
+            opacity: .7
+
+
+        &::before
+            position: absolute
+            content: ''
+            width: 80px
+            height: 80px
+            box-sizing: border-box
+            border-radius: 50%
+            border: 1px solid transparent
+            left: 50%
+            top: 50%
+            transform: translate(-50%,-50%)
+            transition: border-color .3s
+
+    &__button-inner
+        width: 100%
+        height: 100%
+        border-radius: 50%
+        overflow: hidden
+        display: flex
+        justify-content: center
+        align-items: center
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+
+    &__button--active
+
+        &.teacher-section__button--green
+            &::before
+                border: 1px solid $porcelain-dark
+
+        &.teacher-section__button--orange
+            &::before
+                border: 1px solid $orange-dark
+
+        &.teacher-section__button--blue
+            &::before
+                border: 1px solid #75ADE1
+
+        &.teacher-section__button--purple
+            &::before
+                border: 1px solid #925CE0

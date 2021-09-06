@@ -1,0 +1,21 @@
+section.teacher-section 
+    .teacher-section__container 
+        h2.teacher-section__title 
+            | Знакомьтесь с нашими 
+            br
+            | преподавателями
+        .teacher-section__tab-container.js-teacher-tabs
+            ul.teacher-section__tab-buttons
+                li.teacher-section__tab-button-item
+                    button.teacher-section__button.teacher-section__button--blue.js-teacher-tab-button.teacher-section__button--active
+                        span.teacher-section__button-inner
+                            img(src="img/teacher/teacher-1.webp", alt="Альберт Горяев", width="72", height="72")
+                li.teacher-section__tab-button-item
+                    button.teacher-section__button.js-teacher-tab-button.teacher-section__button--blue
+                        span.teacher-section__button-inner
+                            img(src="img/teacher/teacher-2.webp", alt="Альберт Горяев", width="72", height="72")
+            .teacher-section__tab-items 
+                .teacher-section__tab-item.js-teacher-tab-item
+                    +teacher-card("img/teacher/teacher-1-large.webp", "Альберт Горяев", "Механико-математический факультет&nbsp;МГУ", "img/university/mgu.webp", "teacher-card--blue")
+                .teacher-section__tab-item.js-teacher-tab-item.hidden
+                    +teacher-card("img/teacher/teacher-1-large.webp", "Альберт Горяев", "Механико-математический факультет&nbsp;МГУ", "img/university/mgu.webp", "teacher-card--blue")

@@ -1,0 +1,8 @@
+mixin program-card(image, title, description, className)
+    .program-card(class= className)
+        .program-card__image 
+            img(src= image, alt= title)
+        h5.program-card__title!= title 
+        p.program-card__description= description
+        .program-card__button 
+            +button("Узнать подробнее")

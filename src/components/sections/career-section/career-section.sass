@@ -1,0 +1,53 @@
+.career-section
+    +section-padding()
+
+    &__container
+        +wrapper()
+
+    &__title
+
+    &__main
+        display: grid
+        gap: 16px
+
+        +sm-block()
+            grid-template-columns: 1fr 1fr
+            flex-direction: row
+            flex-wrap: wrap
+
+        +md-block()
+            grid-template-columns: 1fr 1fr 1fr 1fr
+
+    &__item
+        text-align: center
+
+    &__item-image
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100px
+        height: 100px
+        border-radius: 50%
+        background-color: $blue
+        margin-bottom: 15px
+        margin-left: auto
+        margin-right: auto
+
+        img 
+            width: 40px
+            height: auto
+            font-size: 12px
+            line-height: 12px
+
+    &__item-text
+        font-size: 17px
+        line-height: 129%   
+        margin-top: 0
+        margin-bottom: 0
+
+        +sm-block()
+            font-size: 18px
+            line-height: 144%
+
+    &__item-button
+        margin-top: 15px

@@ -1,0 +1,169 @@
+.footer
+    padding-top: 32px
+    padding-bottom: 32px
+    background-color: $black
+    color: #ffffff
+    width: 100%
+
+    +sm-block()
+        padding-top: 60px
+        padding-bottom: 60px
+
+    +md-block()
+        padding-top: 80px
+        padding-bottom: 80px
+
+    &__container
+        max-width: 1030px
+        width: 100%
+        padding-left: 16px
+        padding-right: 16px
+        box-sizing: border-box
+        margin-left: auto
+        margin-right: auto
+        
+        +sm-block()
+            padding-left: 32px
+            padding-right: 32px
+        
+    &__row
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        width: 100%
+
+        +sm-block()
+            flex-direction: row
+
+    &__logo
+        color: $white
+            
+
+    &__info
+        width: 100%
+
+        +sm-block()
+            max-width: 344px
+            padding-right: 20px
+
+        +md-block()
+            max-width: 470px
+
+    &__about-team
+        color: #ffffff
+        font-family: $regular
+        font-size: 15px
+        line-height: 24px
+        margin-top: 24px
+        margin-bottom: 0
+
+    &__contacts
+        box-sizing: border-box
+        margin-top: 24px
+
+        +sm-block()
+            margin-top: 0
+            max-width: 335px
+            padding-left: 20px
+
+        +md-block()
+            max-width: 378px
+            width: 100%
+            margin-top: 0
+            padding-left: 30px
+
+
+
+    &__contacts-text
+        font-size: 22px
+        line-height: 28px
+        color: #ffffff
+        font-family: $bold
+        max-width: 315px
+        margin-bottom: 16px
+
+    &__social-list
+        padding: 0
+        margin: 0
+        margin-left: -11px
+        margin-right: -11px
+        display: flex
+
+    &__social-item
+        list-style: none
+        margin-left: 11px
+        margin-right: 11px
+        width: 48px
+        height: 48px
+
+    &__social-link
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        opacity: 1
+        transition: opacity .3s ease-out
+
+        &:hover
+            opacity: .7
+
+        img
+            width: 100%
+            height: 100%
+            max-width: 100%
+
+    &__rights-block
+        margin-top: 32px
+
+        +sm-block()
+            margin-top: 40px
+            display: flex
+            flex-wrap: wrap
+            gap: 16px 24px
+        
+        +md-block()
+            flex-wrap: wrap
+            width: 100%
+            margin-top: 64px
+            justify-content: space-between
+
+            
+
+    &__rights-block-item
+
+        +md-block()
+            margin-right: 22px  
+
+
+    &__rights-block-copyright
+        flex-grow: 1
+        width: 100%
+
+        +sm-block()
+            flex-grow: 1
+
+        +md-block()
+            flex-grow: 0
+            width: auto
+
+    &__copyright
+        display: inline-block
+        font-size: 13px
+        line-height: 19px
+        color: #ffffff
+        opacity: .7
+        font-family: $regular
+        
+    &__link
+        display: inline-block
+        font-size: 13px
+        line-height: 19px
+        color: $blue-berry
+        text-decoration: none
+        font-family: $regular
+        opacity: 1
+        transition: opacity .3s ease-out
+
+        &:hover
+            opacity: .7

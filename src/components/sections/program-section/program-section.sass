@@ -1,0 +1,36 @@
+.program-section
+    +section-padding()
+
+    &__container
+        +wrapper()
+
+    &__grid
+        display: grid
+        gap: 16px
+
+        +sm-block()
+            grid-template-columns: 1fr 1fr
+            flex-direction: row
+            flex-wrap: wrap    
+
+    &__title
+        font-size: 22px
+        line-height: 120%
+        text-align: left
+        margin-bottom: 24px
+        margin-top: 0
+
+        +sm-block()
+            font-size: 28px
+            margin-bottom: 32px
+            padding-right: 25%
+            background-image: url('../img/decorative/flash.svg')
+            background-size: 60px 66px
+            background-position: bottom 50% right 14% 
+            background-repeat: no-repeat
+
+        +md-block()
+            margin-bottom: 60px
+            font-size: 40px
+            padding-right: 41%
+            background-position: bottom 59% right 23%

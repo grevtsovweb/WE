@@ -1,0 +1,16 @@
+.quote-section.quote-section--green
+    .quote-section__container 
+        .quote-section__header
+            h2.quote-section__title
+                | Нобелевский лауреат по физике 
+                span.quote-section__title--yellow Ричард Фейнман 
+                | однажды сказал:
+        .quote-section__main 
+            +quote("img/quote/feynman", "Ричард Фейнман", "Если вы ученый, квантовый физик и не можете в двух словах объяснить пятилетнему ребенку, чем вы занимаетесь, — вы шарлатан.")
+        .quote-section__offer.quote-section__offer--divider
+            h5.quote-section__offer-title 
+                | Мы не&nbsp;обещаем объяснить в&nbsp;двух словах физику, но мы точно 
+                span.quote-section__offer-title--yellow улучшим знания школьника 
+                | за&nbsp;время занятий в&nbsp;WeScience
+            .quote-section__offer-button 
+                +button("Записаться на пробный урок", null, 'open', 'sign-up-lesson')

@@ -1,0 +1,49 @@
+section.price-section
+    .price-section__container
+        h2.price-section__title Стоимость онлайн&nbsp;-&nbsp;занятий
+        .price-section__tab-container.js-tab-price
+            ul.price-section__tab-buttons
+                li.price-section__tab-button-item
+                    button.price-section__button.price-section__button--active.js-tab-button
+                        | Средняя школа 
+                        span.price-section__button--classes  (6-8 кл)
+                        span.price-section__button--timing Уроки по 50 мин.
+                li.price-section__tab-button-item
+                    button.price-section__button.js-tab-button
+                        | Старшая школа  
+                        span.price-section__button--classes  (9-11 кл)
+                        span.price-section__button--timing Уроки по 50 мин.
+            .swiper-container.swiper-container--mobile-only.js-tab-item
+                .swiper.js-slider-price
+                    .price-section__tab-items.swiper-wrapper 
+                        .swiper-slide.price-section__tab-item 
+                            +price-card("8 занятий", "999 руб.", "price-card--blue")
+                        .swiper-slide.price-section__tab-item 
+                            +price-card("16 занятий", "890 руб.", "price-card--blue")
+                        .swiper-slide.price-section__tab-item 
+                            +price-card("24 занятия", "999 руб.", "price-card--blue")
+                        .swiper-slide.price-section__tab-item 
+                            +price-card("32 занятия", "720 руб.", "price-card--blue")
+                    .swiper-pagination
+                    .swiper-button-prev
+                        +svg("36", "36", "icon-arrow-round")
+                    .swiper-button-next
+                        +svg("36", "36", "icon-arrow-round")
+            .swiper-container.swiper-container--mobile-only.js-tab-item.hidden
+                .swiper.js-slider-price-2
+                    .price-section__tab-items.swiper-wrapper 
+                        .swiper-slide.price-section__tab-item 
+                            +price-card("8 занятий", "999 руб.", "price-card--blue")
+                        .swiper-slide.price-section__tab-item 
+                            +price-card("16 занятий", "890 руб.", "price-card--blue")
+                        .swiper-slide.price-section__tab-item 
+                            +price-card("24 занятия", "999 руб.", "price-card--blue")
+                        .swiper-slide.price-section__tab-item 
+                            +price-card("32 занятия", "720 руб.", "price-card--blue")
+                    .swiper-pagination
+                    .swiper-button-prev
+                        +svg("36", "36", "icon-arrow-round")
+                    .swiper-button-next
+                        +svg("36", "36", "icon-arrow-round")
+
+                    

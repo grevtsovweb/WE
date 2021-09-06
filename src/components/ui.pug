@@ -1,0 +1,37 @@
+include button/button
+include mixins/svg
+include field/field
+include program-card/program-card
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="styles/style.css")
+        title WeScience
+        meta(name="description", content="Description")
+        meta(name="keywords", content="Description")
+        link(rel="icon" href="favicon.svg")
+        link(rel="preload", href="fonts/MullerBold.woff2", as="font", type="font/woff2", crossorigin="anonymous")
+        link(rel="preload", href="fonts/MullerRegular.woff2", as="font", type="font/woff2", crossorigin="anonymous")
+        link(rel="preload", href="fonts/MullerMedium.woff2", as="font", type="font/woff2", crossorigin="anonymous")
+    body.page.js-page
+        
+        
+        ul
+            li 
+                a(href="https://grevtsovweb.github.io/demo/WE/index.html") Главная 
+            li 
+                a(href="https://grevtsovweb.github.io/demo/WE/math.html") Математика 
+            li 
+                a(href="https://grevtsovweb.github.io/demo/WE/physics.html") Физика 
+            li 
+                a(href="https://grevtsovweb.github.io/demo/WE/english.html") Английский
+            li 
+                a(href="https://grevtsovweb.github.io/demo/WE/coding.html") Кодинг
+            li 
+                a(href="https://grevtsovweb.github.io/demo/WE/about-us.html") О нас 
+
+    script(type="text/javascript", src="https://assets.calendly.com/assets/external/widget.js", async)
+    script(src="js/main.js")

@@ -1,0 +1,118 @@
+.field
+    position: relative
+
+    &__label
+        font-size: 14px
+        color: $black
+        line-height: 24px
+        margin-bottom: 8px
+        display: inline-block
+
+    &__input
+        font-size: 17px 
+        line-height: 22px
+        font-family: $regular
+        background-color: $white
+        border: 1px solid rgba(226, 226, 226, .5)
+        border-radius: 12px
+        color: #000000
+        padding-left: 20px
+        padding-right: 20px
+        padding-top: 7px
+        padding-bottom: 7px
+        height: 56px
+        box-sizing: border-box
+        width: 100%
+        max-width: 100%
+        color: $black
+        outline: none
+        transition: all .3s
+        box-shadow: none
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+        
+
+        &:hover
+            border: 1px solid $black
+            background-color: $white
+
+        &:focus
+            border: 1px solid #E2E2E2
+            background-color: $white
+
+        &:active
+            border: 1px solid #E2E2E2
+            background-color: $white
+
+        &::placeholder
+            color: rgba(89, 89, 89, .5)
+
+        &:not(:placeholder-shown)
+            border: 1px solid #E2E2E2
+            background-color: $white
+            
+
+    &--full-width
+        max-width: none
+
+    &--search
+
+        .field__input
+            padding-left: 48px
+            height: 48px
+
+            +md-block()
+                height: 54px
+        
+
+        &::before
+            width: 18px
+            height: 18px
+            position: absolute
+            left: 20px
+            top: calc(50% - 9px)
+            content: ''
+            background-image: url('../img/sprite/u_search.svg') 
+            background-position: center
+            background-size: 18px 18px
+            background-repeat: no-repeat
+
+    &--search-product
+        
+
+        .field__input
+            padding-right: 44px
+
+        &::before
+            width: 18px
+            height: 18px
+            position: absolute
+            right: 20px
+            top: calc(50% - 9px)
+            content: ''
+            background-image: url('../img/sprite/u_search.svg') 
+            background-position: center
+            background-size: 18px 18px
+            background-repeat: no-repeat
+
+    &--error
+        .field__input
+            border: 1px solid#E83017
+
+    &--success
+        .field__input
+            border: 1px solid #40B915
+
+    &--warning
+        .field__input
+            border: 1px solid #FFB11B
+
+
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+    

@@ -1,0 +1,33 @@
+.features-section
+    +section-padding()    
+
+    &__container
+        +wrapper()
+
+        +sm-block()
+            max-width: 584px
+
+        +md-block()
+            +wrapper()
+
+    &__button
+        margin-left: auto
+        margin-right: auto
+        display: flex
+        justify-content: center
+        margin-top: 24px
+
+        +sm-block()
+            margin-top: 32px
+
+        +md-block()
+            margin-top: 60px
+
+        .button
+            width: 100%
+
+            +sm-block()
+                width: auto
+
+    &--blue
+        background-color: #75ADE1

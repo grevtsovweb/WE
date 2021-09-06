@@ -1,0 +1,25 @@
+section.header-section
+    .header-section__top 
+        include ../../header/header-transparent
+    .header-section__container
+        .header-section__main 
+            .header-section__offer.header-section__offer--main 
+                .header-section__offer-text
+                    h1.header-section__title Делаем учеников самыми сильными в классе
+                    p Оставь заявку на занятия в WeScience и начни улучшать свои знания уже сегодня
+                .header-section__offer-form 
+                    form.form(action="#", method="post") 
+                        .form__group
+                            +field("Номер телефона", "text", "phone")
+                        +button("Оставить заявку") 
+                .header-section__offer-image 
+                    include ../../../assets/img/header-section/innovation.svg
+            ul.header-section__features
+                li.header-section__features-item. 
+                    В удобное время из любой точки мира
+                li.header-section__features-item. 
+                    Проводим занятия как индивидуально, так и в группах
+                li.header-section__features-item. 
+                    Готовим к олимпиадам и повышаем школьный уровень
+                li.header-section__features-item. 
+                    Выстраиваем индивидуальный трек для каждого учащегося

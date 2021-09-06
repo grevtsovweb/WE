@@ -1,0 +1,26 @@
+.article-section
+    +section-padding()
+
+    &__container
+        +wrapper()
+
+    &__main
+        display: grid
+        gap: 48px
+
+        +md-block()
+            gap: 120px
+
+    &__divider-sm
+        display: none
+
+        +sm-block()
+            display: block
+            width: 100%
+            height: 1px
+            background-color: $porcelain-dark
+
+    &--panel
+        background-color: $panel
+
+    

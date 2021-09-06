@@ -1,0 +1,67 @@
+.checkbox
+    display: flex
+    align-items: center
+    cursor: pointer
+
+    &__input-hidden
+        position: absolute
+        width: 1px
+        height: 1px
+        margin: -1px
+        padding: 0
+        overflow: hidden
+        border: 0
+        clip: rect(0, 0, 0, 0)
+        -webkit-clip-path: inset(100%)
+        clip-path: inset(100%)
+
+        &:checked
+            + .checkbox__input
+                position: relative
+                
+                
+                &::before
+                    transform: scale(1)
+
+    &__input
+        width: 20px
+        height: 20px
+        border-radius: 3px
+        border: 2px solid $border
+        box-sizing: border-box
+        display: flex
+        position: relative
+                
+        &::before
+            position: absolute
+            content: ''
+            width: 14px
+            height: 14px
+            display: block
+            left: 1px
+            top: 1px
+            border-radius: 2px
+            background-image: url('../img/sprite/u_check.svg')
+            background-position: center
+            background-size: cover
+            background-color: $accent
+            transition: transform .1s
+            transform-origin: center
+            transform: scale(0)
+
+    &__content
+        margin-left: 12px
+        font-size: 14px
+        line-height: 14px
+        color: $main-text
+        font-family: $medium
+        display: flex
+        align-items: center
+
+    &__content-color 
+        width: 24px
+        height: 24px
+        border-radius: 50%
+        margin-right: 8px
+
+

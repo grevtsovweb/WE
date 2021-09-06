@@ -1,0 +1,9 @@
+mixin for-whom-card(img, title, text, className)
+    .for-whom-card(class= className)
+        .for-whom-card__image 
+            img(src= img, alt= title, width="253", height="199" loading="lazy")
+        .for-whom-card__content 
+            p.for-whom-card__title= title 
+            p.for-whom-card__text= text 
+            .for-whom-card__button 
+                +button("Записаться", "button--medium", 'open', 'sign-up-lesson')

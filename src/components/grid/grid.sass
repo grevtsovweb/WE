@@ -1,0 +1,24 @@
+.grid
+    display: grid
+    gap: 24px
+    flex-wrap: wrap
+
+    +sm-block()
+        display: flex
+        margin-left: -8px
+        margin-right: -8px
+        flex-direction: row  
+        flex-wrap: wrap 
+        gap: 0
+
+    &__col-6-sm
+        +sm-block()
+            width: calc(50% - 16px)
+            margin-left: 8px
+            margin-right: 8px
+            margin-bottom: 16px
+
+    &__col-3-md
+        +md-block()
+            width: calc(25% - 16px)
+            flex-shrink: 0

@@ -1,0 +1,180 @@
+.price-card
+    padding-top: 32px
+    background-color: $white
+    border-radius: 32px
+    border: 1px solid $disabled
+    box-sizing: border-box
+    
+    &__header
+        text-align: center
+        padding-left: 16px
+        padding-right: 16px
+        padding-bottom: 16px
+    
+    &__class
+        font-size: 22px
+        line-height: 28px
+        letter-spacing: 0.002em
+        color: #000000
+        margin-bottom: 4px
+        font-family: $bold
+        margin-top: 0
+
+    &__description
+        font-size: 15px
+        line-height: 20px
+        letter-spacing: 0.005em
+        color: $text
+        margin-top: 4px
+        margin-bottom: 0
+
+    &__body
+        padding-bottom: 32px
+        padding-top: 16px
+        padding-left: 16px
+        padding-right: 16px
+
+    &__price-block
+        display: flex
+        align-items: center
+        flex-direction: column
+
+    &__price
+        font-size: 15px
+        line-height: 133%
+        color: $text
+
+    &__price-main
+        font-size: 28px
+        line-height: 120%
+        font-family: $bold
+        margin-right: 4px
+
+    &__price-for-all 
+        font-size: 17px
+        line-height: 130%
+        letter-spacing: 0.002em
+        color: $text
+        margin-top: 12px
+
+        &--bold
+            font-family: $bold
+
+    &__button
+        margin-left: auto
+        margin-right: auto
+        display: flex
+        justify-content: center
+        margin-top: 30px
+
+    &__footer
+        padding-top: 16px
+        padding-bottom: 26px
+        padding-left: 16px
+        padding-right: 16px
+        border-top: 1px solid $disabled
+
+    &__check
+        width: 20px
+        height: 20px
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 12px
+        border: 1px solid $disabled
+
+        svg
+            width: 10px
+            height: 10px
+            fill: $white
+
+    &__list
+        padding: 0
+        margin: 0
+
+    &__list-item
+        list-style: none
+        padding: 0
+        margin: 0
+        display: flex
+        align-items: center
+        font-size: 15px
+        line-height: 133%
+        letter-spacing: 0.005em
+
+    &__list-item:not(:last-child)
+        margin-bottom: 16px
+
+    &__offer
+        position: static
+        bottom: 100%
+        left: 0
+        color: $white
+        display: block
+        border-top-left-radius: 32px
+        border-top-right-radius: 32px
+        font-size: 15px
+        line-height: 20px
+        border: 1px solid $disabled
+        padding-left: 24px
+        padding-right: 24px
+        display: block
+        padding-top: 9px
+        padding-bottom: 7px
+        width: 100%
+        box-sizing: border-box
+        text-align: center
+        font-family: $bold
+
+        +sm-block()
+            position: absolute
+
+    &--green
+        .price-card__check--active
+            background-color: $porcelain-dark
+            border: 1px solid $porcelain-dark
+
+        .price-card__price-main
+            color: $porcelain-dark
+
+        .price-card__offer
+            background-color: $porcelain-dark
+
+    &--orange
+        .price-card__check--active
+            background-color: $orange-dark
+            border: 1px solid $orange-dark
+
+        .price-card__price-main
+            color: $orange-dark
+
+        .price-card__offer
+            background-color: $orange-dark
+
+    &--blue
+        .price-card__check--active
+            background-color: #75ADE1
+            border: 1px solid #75ADE1
+
+        .price-card__price-main
+            color: #75ADE1
+
+        .price-card__offer
+            background-color: #75ADE1
+
+    &--purple
+        .price-card__check--active
+            background-color: #925CE0
+            border: 1px solid #925CE0
+
+        .price-card__price-main
+            color: #925CE0
+
+        .price-card__offer
+            background-color: #925CE0
+
+    &--offer
+        border-top-left-radius: 0
+        border-top-right-radius: 0
+        position: relative

@@ -1,0 +1,40 @@
+.it-card
+    border: 1px solid $disabled
+    border-radius: 16px
+    padding-left: 12px
+    padding-right: 12px
+    padding-top: 32px
+    padding-bottom: 32px
+    background-color: $white
+    box-sizing: border-box
+    min-height: 180px
+
+    +sm-block()
+        height: 100%
+        min-height: 204px
+
+    &__img
+        width: 132px
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 24px
+        display: flex
+        justify-content: center
+        align-items: center
+
+        img
+            width: 100%
+            height: auto
+            max-width: 100%
+
+    &__title
+        font-size: 17px
+        line-height: 129%
+        margin-top: 0
+        margin-bottom: 0
+        text-align: center
+        font-family: $bold
+
+        +sm-block()
+            font-size: 22px
+
